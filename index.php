@@ -11,8 +11,8 @@
 				<a href="login.php"><button class="btn">start now</button></a>
 				<a href="">
 					<button class="btn-secondary">
-					explore greenworks
-				</button></a>
+						explore greenworks
+					</button></a>
 			</div>
 		</div>
 		<div class="hero-picture" data-aos="fade-left">
