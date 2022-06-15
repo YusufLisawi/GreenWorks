@@ -217,6 +217,5 @@ footer a {
 	position: absolute;
 	width: 100%;
 	height: 300px;
-	/* background: var(--gradient); */
 	z-index: -1000;
 }

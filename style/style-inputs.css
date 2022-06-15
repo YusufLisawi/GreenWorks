@@ -15,7 +15,6 @@ body {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	transition: all ease 300ms;
 	overflow: hidden;
 }
 

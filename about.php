@@ -17,43 +17,30 @@
 		</div>
 	</div>
 </section>
-<section class="section1" data-aos="fade-in">
-	<h2 class="title" data-aos="fade-right">Protect your world</h2>
+<section class="section1 about" data-aos="fade-in">
+	<h2 class="title" data-aos="fade-in">our objectives</h2>
 
-	<div class="cards flex">
-		<div class="card" data-aos="fade-up">
-			<img src="./images/image-sea.png" alt="sea" />
-			<div class="text">
-				<h2>protect your sea</h2>
-				<p>
-					Unfortunately, one of the very harmful use what
-					humans have started using the ocean for
-					disposing the wastes into large scales.
-				</p>
-			</div>
+	<div class="cards" data-aos="fade-in">
+		<div class="card-2 div1" data-aos="fade-up" data-aos-duration="600">
+			<p><span>Reduce</span> the disposal of non-degradable products that are <span>harmful</span> to the
+				environment</p>
 		</div>
-		<div class="card" data-aos="fade-in" data-aos-duration="500">
-			<img src="./images/image-forest.png" alt="forest" />
-			<div class="text">
-				<h2>protect your forest</h2>
-				<p>
-					Land pollution not only affects it, but also
-					passes into the fresh water that human beings
-					need to survive.
-				</p>
-			</div>
+		<div class="card-2 div2" data-aos="fade-up" data-aos-duration="500">
+			<p>Develop <span>the spirit of creativity</span> among citizens</p>
 		</div>
-		<div class="card" data-aos="fade-up">
-			<img src="./images/image-air.png" alt="air" />
-			<div class="text">
-				<h2>protect your air</h2>
-				<p>
-					Air pollution is defined as a change in the
-					composition of the air by pollutants harmful to
-					health and the environment.
-				</p>
-			</div>
+		<div class="card-2 div3" data-aos="fade-up" data-aos-duration="300">
+			<p>Engage every citizen to make
+				<span>eco-friendly acts</span>
+				responsible actions
+			</p>
 		</div>
+	</div>
+</section>
+
+<section class="creator">
+	<h2 class="title" data-aos="fade-right">creator</h2>
+	<div class="details">
+
 	</div>
 </section>
 <?php include 'inc/footer.php' ?>

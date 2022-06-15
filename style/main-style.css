@@ -98,7 +98,6 @@
 	gap: 1.5rem;
 }
 .cards {
-	/* position: relative; */
 	overflow: visible;
 }
 
@@ -150,7 +149,7 @@
 /* about us */
 .hero.about p,
 .hero.about p span {
-	line-height: 220%;
+	line-height: 200%;
 	width: 100%;
 	font-size: 1.5rem;
 }
@@ -158,7 +157,59 @@
 .hero.about h1 span {
 	font-size: 6.5rem;
 }
-.hero.about h1 {
-	/* margin-top: -5rem; */
-	margin-bottom: 3rem;
+.about .title {
+	margin-top: -5rem;
+}
+
+.about .cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+.div1 {
+	grid-area: 1 / 1 / 2 / 2;
+}
+.div2 {
+	grid-area: 2 / 2 / 3 / 3;
+}
+.div3 {
+	grid-area: 3 / 3 / 4 / 4;
+}
+
+.card-2 {
+	text-align: center;
+	display: grid;
+	place-content: center;
+	width: 400px;
+	height: 180px;
+	padding: 1.6rem 1.2rem;
+	background: #fff;
+	border-radius: 20px;
+	color: #000;
+	box-shadow: 0px 24px 85px -1px rgba(0, 0, 0, 0.05);
+	overflow: hidden;
+}
+.card-2:nth-child(1) {
+	box-shadow: 0px -5px 85px -1px rgba(0, 0, 0, 0.05);
+}
+.about .cards::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 400px;
+	z-index: -1000;
+	background: linear-gradient(-90deg, #37bc2b 1.04%, #b5ffae 120.29%);
+	left: 0;
+	margin-top: 4.5rem;
+}
+.card-2 p {
+	font-size: 1.6rem;
+	line-height: 151%;
+}
+.card-2 p span {
+	color: var(--primary-color);
+	font-size: 1.6rem;
 }

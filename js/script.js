@@ -5,7 +5,7 @@ const toTop = document.querySelector(".to-top i");
 const card = document.querySelector(".cards");
 
 window.addEventListener("scroll", () => {
-	if (window.scrollY > window.innerHeight) {
+	if (window.scrollY > 350) {
 		toTop.classList.add("show");
 	} else {
 		toTop.classList.remove("show");
