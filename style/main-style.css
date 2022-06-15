@@ -1,0 +1,164 @@
+/* hero section */
+.hero {
+	margin: 1rem 0;
+	overflow: hidden;
+}
+.hero img {
+	width: 500px;
+}
+.hero .flex {
+	justify-content: space-between;
+	gap: 3rem;
+}
+.hero p {
+	margin: 1rem 0;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 131%;
+	width: 80%;
+}
+.text-and-btn {
+	display: flex;
+	flex-direction: column;
+	gap: 1.3rem;
+}
+.btns-flex {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	gap: 1.5rem;
+	flex-wrap: wrap;
+	width: 90%;
+}
+/* .hero .btns-flex {
+	margin-top: 2.3rem;
+} */
+
+/* section1 heading */
+.section1,
+.section {
+	/* overflow: visible; */
+	margin: 10rem 0px 10rem 0px;
+}
+.card {
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 350px;
+	height: 500px;
+	padding: 1.6rem 1.2rem;
+	background-color: #fff;
+	border-radius: 20px;
+	box-shadow: 0px 24px 85px -1px rgba(0, 0, 0, 0.15);
+	/* box-shadow: 0px 0px 0px 3px var(--primary-color) inset; */
+	overflow: hidden;
+}
+
+.card:nth-child(2) {
+	flex-direction: column-reverse;
+	justify-content: space-between;
+}
+.card:nth-child(2) .text {
+	margin: 0;
+}
+
+.card img {
+	width: 300px;
+	width: 300px;
+	object-fit: cover;
+	border-radius: 20px;
+}
+.card .text {
+	text-align: center;
+	margin-top: 1rem;
+	max-width: 80%;
+}
+
+.card .text h2 {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 131%;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--primary-color);
+	margin: 0.7rem 0;
+}
+.card .text p {
+	font-family: "Lato";
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 150.5%;
+	text-align: center;
+	color: #000000;
+}
+
+.cards.flex {
+	flex-wrap: wrap;
+	gap: 1.5rem;
+}
+.cards {
+	/* position: relative; */
+	overflow: visible;
+}
+
+.cards::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 300px;
+	background: var(--gradient);
+	/* bottom: 0; */
+	z-index: -1000;
+}
+/* featured */
+.greenworks .grid img {
+	width: 100%;
+}
+.greenworks .grid {
+	overflow: hidden;
+	display: grid;
+	gap: 1.5rem;
+	grid-auto-columns: auto;
+	grid-template-areas:
+		"one three four"
+		"two three five";
+}
+.img1 {
+	grid-area: one;
+}
+.img2 {
+	grid-area: two;
+	margin-top: -25px;
+}
+.img3 {
+	grid-area: three;
+}
+.img4 {
+	grid-area: four;
+}
+.img5 {
+	grid-area: five;
+}
+
+.greenworks .grid img {
+	cursor: pointer;
+	transition: 300ms ease-in-out;
+	border-radius: 1.2rem;
+}
+
+/* about us */
+.hero.about p,
+.hero.about p span {
+	line-height: 220%;
+	width: 100%;
+	font-size: 1.5rem;
+}
+.hero.about h1,
+.hero.about h1 span {
+	font-size: 6.5rem;
+}
+.hero.about h1 {
+	/* margin-top: -5rem; */
+	margin-bottom: 3rem;
+}
