@@ -39,8 +39,22 @@
 
 <section class="creator">
 	<h2 class="title" data-aos="fade-right">creator</h2>
-	<div class="details">
-
+	<div class="details flex" data-aos="fade-up" data-aos-duration="500">
+		<img src="images/me.png" alt="profile">
+		<div class="more-details">
+			<h2>Youssef El aissaoui</h2>
+			<h4>fullstack developper & designer</h4>
+			<a href="http://yusuflisawi.github.io/" target="blank">
+				<button class="btn-secondary">portfolio</button>
+			</a>
+		</div>
 	</div>
 </section>
+<div class="cta section" data-aos="flip-up" data-aos-duration="1000">
+	<div class="card-cta flex" data-aos="fade-in">
+		<h2 class="title">Still have questions ?</h2>
+		<h1>Write us a message.</h1>
+		<a href="contact.php"><button class="btn-secondary">contact us</button></a>
+	</div>
+</div>
 <?php include 'inc/footer.php' ?>

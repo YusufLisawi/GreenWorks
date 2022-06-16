@@ -213,3 +213,37 @@
 	color: var(--primary-color);
 	font-size: 1.6rem;
 }
+
+/* creator */
+.creator {
+	margin-bottom: 2rem;
+}
+
+.creator .details img {
+	width: 232px;
+	height: 232px;
+	border-radius: 50%;
+	transform: rotate(90deg);
+}
+
+.creator .details.flex {
+	gap: 3rem;
+}
+
+.details .more-details {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.creator .details .more-details h2 {
+	margin: 0rem;
+	text-align: left;
+	font-size: 1.8rem;
+}
+.creator .details h4 {
+	color: var(--primary-color);
+}
+
+.details .more-details .btn-secondary {
+	font-size: 1.2rem;
+}

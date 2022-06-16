@@ -68,7 +68,7 @@ h1 span {
 
 h2 {
 	font-weight: 600;
-	font-size: 2rem;
+	font-size: 1.6rem;
 	line-height: 131%;
 	letter-spacing: 0.12em;
 	text-transform: uppercase;
@@ -135,4 +135,5 @@ p span {
 
 h2.title {
 	margin: 5rem 0;
+	font-size: 2rem;
 }
