@@ -10,7 +10,7 @@
 				<span>recycling</span> in
 				particular.
 			</p>
-			<a href="login.php"><button class="btn">join us</button></a>
+			<!-- <a href="login.php"><button class="btn">join us</button></a> -->
 		</div>
 		<div class="hero-picture" data-aos="fade-left">
 			<img src="./images/IMAGE-aboutus.png" alt="image-hero" />

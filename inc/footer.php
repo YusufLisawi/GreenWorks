@@ -26,10 +26,10 @@
 			</ul>
 		</div>
 		<div class="links2">
-			<a href="">
+			<a href="./contact.php">
 				<h3>Contact us</h3>
 			</a>
-			<a href="">
+			<a href="./about.php">
 				<h3>About us</h3>
 			</a>
 		</div>

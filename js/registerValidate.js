@@ -1,5 +1,6 @@
-const form = document.querySelector("form");
+import { setError, setSuccess } from "./functions.js";
 
+const form = document.querySelector("form");
 const inputFirstName = document.querySelector("#inputFirstName");
 const inputLastName = document.querySelector("#inputLastName");
 const inputUsername = document.querySelector("#inputUsername");
@@ -85,23 +86,4 @@ function checkInputs() {
 		validation.push(1);
 	}
 	return validation.length === 6;
-}
-
-function setError(input, message) {
-	const formGroup = input.parentElement;
-	const messageOutput = formGroup.querySelector(".invalid-feedback");
-	const label = formGroup.querySelector("label");
-
-	messageOutput.innerText = message;
-	label.classList.add("is-invalid");
-	input.classList.add("is-invalid");
-}
-function setSuccess(input) {
-	const formGroup = input.parentElement;
-	const messageOutput = formGroup.querySelector(".invalid-feedback");
-	const label = formGroup.querySelector("label");
-
-	messageOutput.innerText = "";
-	label.classList.remove("is-invalid");
-	input.classList.remove("is-invalid");
 }

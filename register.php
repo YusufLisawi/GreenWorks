@@ -10,14 +10,14 @@
 
 </head>
 
-<body>
+<body class="window">
 	<a href="index.php">
 		<button class="back">
 			<i class="fas fa-arrow-left" alt="&lt;"></i>
 		</button>
 	</a>
 	<div class="wrapper">
-		<form class="login-form reg" action="" method="post" novalidate>
+		<form class="login-form reg" action="" method="post" autocomplete="off" novalidate>
 			<div class="form-header heading-group">
 				<h4>Welcome to</h4>
 				<img src="./images/logo.svg" alt="logo" class="logo" />
@@ -68,7 +68,7 @@
 			</p>
 		</form>
 	</div>
-	<script src="js/registerValidate.js"></script>
+	<script type="module" src="js/registerValidate.js"></script>
 	<script src="js/animations.js"></script>
 </body>
 

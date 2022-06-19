@@ -9,7 +9,7 @@ input:-webkit-autofill:active {
 	padding: 20px;
 	height: 100vh;
 }
-body {
+body.window {
 	position: relative;
 	background: url("../images/bg.jpg");
 	background-position: center;
@@ -90,7 +90,7 @@ form .form-group {
 	z-index: 0;
 }
 
-.form-group input {
+.form-group .inputField {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -106,8 +106,8 @@ form .form-group {
 	transition: 0.3s;
 	z-index: 1;
 }
-.form-group input:focus,
-.form-group input:valid {
+.form-group .inputField:focus,
+.form-group .inputField:valid {
 	border-color: var(--primary-color);
 	z-index: -1;
 }
@@ -159,4 +159,21 @@ label.is-invalid.inputEffect {
 	position: absolute;
 	top: 4.3rem;
 	left: 2rem;
+}
+
+/* contact us */
+.hero.contact h1,
+.hero.contact h1 span {
+	font-size: 6rem;
+	margin-bottom: -1rem;
+}
+.hero.contact .flex {
+	justify-content: center;
+	gap: 5rem;
+}
+.hero.contact .text-and-btn {
+	margin-top: 4rem;
+}
+.hero.contact {
+	margin-bottom: 4rem;
 }
