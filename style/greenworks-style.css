@@ -1,0 +1,95 @@
+.hero > h1 {
+	text-align: center;
+	margin-top: 3rem;
+	margin-bottom: 4rem;
+}
+h1.name {
+	font-size: 4rem;
+	font-weight: 500;
+}
+.special-btn {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	border: none;
+	background: linear-gradient(319.62deg, #37bc2b 18.62%, #bcffb6 106.15%);
+	border-radius: 50px;
+	gap: 1rem;
+	padding: 0.7rem 1rem;
+	transition: all linear 200ms;
+}
+.special-btn:hover {
+	border-radius: 20px;
+	box-shadow: 0px 4px 20px -1px #81ff759b;
+}
+.special-btn img {
+	width: 50px;
+}
+
+.special-btn span {
+	font-size: 1.8rem;
+	font-weight: 500;
+	color: #fff;
+}
+.mygreenworks .flex {
+	align-items: center;
+	justify-content: center;
+	gap: 4rem;
+}
+.mygreenworks {
+	margin-bottom: 5rem;
+}
+
+.table {
+	width: 100%;
+	background-color: #fff;
+	margin-bottom: 4rem;
+	box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
+}
+thead {
+	font-weight: 400;
+	font-size: 1.7rem;
+	background: black;
+	color: #fff;
+	padding: 1rem;
+}
+thead tr td {
+	font-size: 1.4rem;
+}
+tbody td:nth-child(3) {
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+	justify-content: center;
+}
+tbody td:nth-child(3) * {
+	font-size: 1.4rem;
+}
+tbody tr:hover {
+	background-color: rgb(242, 242, 242);
+}
+
+.table th,
+.table td {
+	padding: 0.75rem;
+	vertical-align: top;
+}
+.table thead th {
+	vertical-align: bottom;
+	border-bottom: 2px solid #d6d7d9;
+}
+
+#view,
+#edit,
+#delete {
+	transition: all 100ms linear;
+}
+#view:hover,
+#edit:hover {
+	color: var(--primary-color);
+}
+
+#delete:hover {
+	color: #ec5353;
+}

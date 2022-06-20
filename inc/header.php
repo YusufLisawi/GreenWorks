@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="icon" type="image/x-icon" href="./images/miniLOGO.svg">
 	<?php if(isset($style_inputs)) echo '<link rel="stylesheet" href="./style/style-inputs.css" type="text/css" />'?>
+	<?php if(isset($style_greenworks)) echo '<link rel="stylesheet" href="./style/greenworks-style.css" type="text/css" />'?>
 	<title>GreenWorks</title>
 </head>
 
