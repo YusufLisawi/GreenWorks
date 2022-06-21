@@ -93,3 +93,72 @@ tbody tr:hover {
 #delete:hover {
 	color: #ec5353;
 }
+
+/* add images */
+.hero.add h1 {
+	margin-bottom: 5rem;
+	margin-top: 8rem;
+}
+.upload {
+	max-width: 80%;
+	margin: 0 auto;
+}
+.dropzone {
+	background: white;
+	border-radius: 20px;
+	border: 3px dashed var(--primary-color) !important;
+	border-image: none;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 4rem;
+}
+
+.dropzone .dz-message {
+	text-align: center !important;
+	margin: 1.1em 0 !important;
+	font-size: 2rem !important;
+	color: var(--primary-color) !important;
+}
+
+label {
+	display: block;
+	font-size: 1.5rem;
+	color: #afafaf;
+	margin-bottom: 0.6rem;
+	margin-top: 0.7rem;
+}
+
+.inputs {
+	width: 100%;
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	gap: 2rem;
+	margin-bottom: 5rem;
+}
+
+.inputs input,
+.inputs textarea {
+	width: 100%;
+	padding: 1rem 0.8rem;
+	border-radius: 10px;
+	border: #afafaf 3px solid;
+}
+.col {
+	width: 100%;
+}
+.row {
+	width: 100%;
+}
+
+textarea {
+	resize: none;
+}
+
+.col textarea {
+	height: 150px;
+}
+.row textarea {
+	height: 257px;
+}

@@ -32,16 +32,6 @@
 					<a href=""><i class="fa fa-trash" id="delete" aria-hidden="true"></i></a>
 				</td>
 			</tr>
-			<tr>
-				<td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, adipisci voluptatem Beatae hic
-					nihil nobis.</td>
-				<td>2022-06-19</td>
-				<td>
-					<a href=""><i class="fa-solid fa-eye" id="view"></i></a>
-					<a href=""><i class="fa-solid fa-pen-to-square" id="edit"></i></a>
-					<a href=""><i class="fa fa-trash" id="delete" aria-hidden="true"></i></a>
-				</td>
-			</tr>
 		</tbody>
 	</table>
 </section>
