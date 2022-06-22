@@ -28,7 +28,6 @@
             $exist = True;
         } else {
             $usr -> insertUser($fname,$lname,$username,$email,$pwd);
-            $auth -> start($username);
             $auth -> redirect("login.php");
         }
 

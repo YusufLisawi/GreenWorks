@@ -8,7 +8,7 @@
         private $pwd;
 
         public function getUser($email){
-            $sql = "SELECT * FROM `users` WHERE email = ? LIMIT 1;";
+            $sql = "SELECT * FROM `user` WHERE email = ? LIMIT 1;";
             $stmt = $this
                     ->connect()
                     ->prepare($sql);
@@ -20,7 +20,7 @@
         }
 
         public function insertUser($firstName, $lastName,$username,$email, $pwd) {
-            $sql = "INSERT INTO users(firstname,lastname,username,email,password) VALUES(?,?,?,?,?);";
+            $sql = "INSERT INTO user(firstname,lastname,username,email,password) VALUES(?,?,?,?,?);";
             $stmt = $this
                     ->connect()
                     ->prepare($sql);
@@ -29,7 +29,7 @@
         }
 
         public function remove($username){
-            $sql = "DELETE FROM `users` WHERE username = ?;";
+            $sql = "DELETE FROM `user` WHERE username = ?;";
             $stmt = $this
                     ->connect()
                     ->prepare($sql);
@@ -38,7 +38,7 @@
         }
 
         public function isExist($username, $email){
-            $sql = "SELECT * FROM `users` WHERE username = ? OR email = ?;";
+            $sql = "SELECT * FROM `user` WHERE username = ? OR email = ?;";
             $stmt = $this
                     ->connect()
                     ->prepare($sql);

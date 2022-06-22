@@ -1,3 +1,6 @@
+<?php
+include_once "modules/dologin.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +10,6 @@
 	<link rel="stylesheet" href="./style/style-inputs.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 	<link rel="icon" type="image/x-icon" href="./images/miniLOGO.svg">
-
 </head>
 
 <body class="window">
@@ -22,6 +24,14 @@
 				<h4>Welcome to</h4>
 				<img src="./images/logo.svg" alt="logo" class="logo" />
 				<h5>sign in</h5>
+
+				<?php if ($showPopUp):?>
+				<div class="isExistUser"
+					style="color: #ff3c3c; margin-bottom: -1.5rem; margin-top: 1rem; font-size: 1.1rem;">
+					<?php echo $_SESSION['message']; unset($_SESSION['message'])?>
+				</div>
+				<?php endif; ?>
+
 			</div>
 			<!--User Email-->
 			<div class="form-control">

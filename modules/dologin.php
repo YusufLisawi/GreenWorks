@@ -17,27 +17,32 @@
 
     if(isset($_POST['email']))
     {
-        $email = $_POST['email'];
-        $pwd = $_POST['password'];
+        $email = trim(htmlentities($_POST['email']));
+        $pwd = trim(htmlentities($_POST['password']));
 
         
         $data = $usr -> getUser($email);
-
         $found = $data['email'] ?? False;
-        
 
         if($found) // User exist in the Database
         {
             $pass = $auth -> checkUser($email, $pwd, $data['email'], $data['password']);
-            if($pass)
+
+            if ($pass)
             {
                 $auth -> start($data['username']);
                 $auth -> redirect("mygreenworks.php");
             }
-        } else {
-            $showPopUp = True;
+            else {
+                $showPopUp = True;
+                $_SESSION['message'] = "Password is incorrect";
+            }
         }
-
+        else 
+        {
+            $showPopUp = True;
+            $_SESSION['message'] = "Email not found";
+        }
     }
 
     

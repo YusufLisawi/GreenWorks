@@ -97,7 +97,7 @@ tbody tr:hover {
 /* add images */
 .hero.add h1 {
 	margin-bottom: 5rem;
-	margin-top: 8rem;
+	margin-top: 5rem;
 }
 .upload {
 	max-width: 80%;
@@ -121,21 +121,12 @@ tbody tr:hover {
 	color: var(--primary-color) !important;
 }
 
-label {
-	display: block;
-	font-size: 1.5rem;
-	color: #afafaf;
-	margin-bottom: 0.6rem;
-	margin-top: 0.7rem;
-}
-
-.inputs {
+.fields {
 	width: 100%;
 	display: flex;
 	align-items: baseline;
 	justify-content: center;
 	gap: 2rem;
-	margin-bottom: 5rem;
 }
 
 .inputs input,
@@ -144,7 +135,17 @@ label {
 	padding: 1rem 0.8rem;
 	border-radius: 10px;
 	border: #afafaf 3px solid;
+	transition: all linear 150ms;
 }
+
+label {
+	display: block;
+	font-size: 1.5rem;
+	color: #afafaf;
+	margin-bottom: 0.6rem;
+	margin-top: 0.7rem;
+}
+
 .col {
 	width: 100%;
 }
@@ -161,4 +162,113 @@ textarea {
 }
 .row textarea {
 	height: 257px;
+}
+
+.inputs {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 2rem;
+	margin-bottom: 5rem;
+}
+
+label.is-invalid {
+	color: #ff3c3c !important;
+	transition: all 100ms linear;
+}
+label.is-valid {
+	color: var(--primary-color);
+	transition: all 100ms linear;
+}
+
+.inputs input:focus,
+.inputs textarea:focus,
+.inputs input:valid,
+.inputs textarea:valid {
+	border-color: var(--primary-color);
+}
+input.is-invalid,
+textarea.is-invalid {
+	border-color: #ff3c3c !important;
+}
+
+.invalid-feedback {
+	color: #ff3c3c;
+	font-size: 1.3rem;
+	margin-bottom: -1rem;
+	transition: all 100ms linear;
+}
+.hide {
+	display: none;
+	transition: all 100ms linear;
+}
+
+/* All Greenworks */
+.card {
+	width: 500px;
+	box-shadow: 0px 0px 0px 3px var(--primary-color);
+	padding-bottom: 1rem;
+}
+
+.card > img {
+	width: 450px;
+}
+.all-greenworks h1 {
+	margin-top: 5rem;
+}
+.gws {
+	margin-bottom: 5rem;
+}
+.greenworks {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	justify-content: center;
+	align-items: center;
+}
+.gw-card {
+	position: relative;
+	width: 500px;
+	background-color: white;
+	box-shadow: 0px 0px 0px 3px var(--primary-color);
+	padding: 2rem;
+	border-radius: 1rem;
+	margin: 1rem 0;
+}
+.gw-card > img {
+	width: 100%;
+	border-radius: 1rem;
+}
+
+.gw-card .text {
+	margin-top: 1rem;
+}
+.gw-card .text * {
+	margin-top: 1.2rem;
+}
+.gw-card h5 {
+	font-size: 1rem;
+	color: #000;
+	opacity: 1;
+}
+.gw-card h5 span {
+	font-size: 1rem;
+	color: var(--primary-color);
+}
+
+.gw-card p {
+	font-size: 1.3rem;
+	line-height: 2.5rem;
+}
+
+.gw-card a {
+	position: absolute;
+	content: "";
+	background-color: #000;
+	width: 100%;
+	height: 100%;
+	inset: 0;
+	border-radius: 1rem;
+	opacity: 0;
 }

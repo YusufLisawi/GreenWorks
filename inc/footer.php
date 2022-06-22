@@ -14,15 +14,15 @@
 				aissaoui</span>
 		</div>
 		<div class="links1">
-			<a href="">
+			<a href="greenworks.php">
 				<h3>greenWorks</h3>
 			</a>
 			<ul>
-				<a href="">
+				<a href="mygreenworks.php">
 					<h3>My greenWorks</h3>
 				</a>
-				<li><a href="">List of greenWorks</li></a>
-				<li><a href="">Add greenWork</li></a>
+				<li><a href="mygreenworks.php">List of greenWorks</li></a>
+				<li><a href="add.php">Add greenWork</li></a>
 			</ul>
 		</div>
 		<div class="links2">

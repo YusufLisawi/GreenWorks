@@ -3,3 +3,4 @@
 
     $auth = new Auth();
     $auth -> end();
+    error_log("Logged out");

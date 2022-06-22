@@ -1,3 +1,6 @@
+<?php
+	include_once "modules/dosignup.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,6 +25,15 @@
 				<h4>Welcome to</h4>
 				<img src="./images/logo.svg" alt="logo" class="logo" />
 				<h5>Register</h5>
+
+				<?php if ($exist):?>
+				<div class="isExistUser"
+					style="color: #ff3c3c; margin-bottom: -1rem; margin-top: -.3rem; font-size: 1.1rem;">User with
+					this
+					email or username are already exist</div>
+				<?php endif; ?>
+
+
 			</div>
 			<div class="form-control signup">
 				<div class="col">

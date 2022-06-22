@@ -7,19 +7,12 @@
 		$auth -> redirect('login.php');
 	}
 ?>
-<?php $style_greenworks = true; $dragndrop = true; include 'inc/header.php' ?>
+<?php $style_greenworks = true; include 'inc/header.php' ?>
 <section class="hero add">
 	<h1 data-aos="fade-left">Add GreenWork</h1>
 </section>
 
 <section class="upload">
-	<div id="dropzone" data-aos="fade-up">
-		<form class="dropzone needsclick" id="demo-upload" action="/upload">
-			<div class="dz-message needsclick">
-				Drop your greenwork images.
-			</div>
-		</form>
-	</div>
 	<form action="" method="POST" class="inputs" data-aos="fade-in" novalidate>
 		<div class="invalid-feedback hide">All fields are required</div>
 		<div class="fields">
@@ -45,5 +38,4 @@
 </section>
 
 <script src="js/validateAdding.js"></script>
-<script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
 <?php include 'inc/footer.php' ?>

@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +16,9 @@
 	<link rel="icon" type="image/x-icon" href="./images/miniLOGO.svg">
 	<?php if(isset($style_inputs)) echo '<link rel="stylesheet" href="./style/style-inputs.css" type="text/css" />'?>
 	<?php if(isset($style_greenworks)) echo '<link rel="stylesheet" href="./style/greenworks-style.css" type="text/css" />'?>
+	<?php if(isset($style_details)) echo '<link rel="stylesheet" href="./style/details-style.css" type="text/css"/>'?>
 	<?php if(isset($dragndrop)) echo '<link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />'?>
+	<?php if(isset($swiperjs)) echo '<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>'?>
 	<title>GreenWorks</title>
 </head>
 
@@ -37,10 +42,20 @@
 						<li><a href="greenworks.php"
 								<?php if(isset($link)){if($link == 2) echo 'class="active-link"';}?>>greenWorks</a>
 						</li>
+						<?php if (!isset($_SESSION['username'])) : ?>
 						<li><a href="about.php"
 								<?php if(isset($link)){if($link == 3) echo 'class="active-link"';}?>>About us</a></li>
 						<li><a href="contact.php"
 								<?php if(isset($link)){if($link == 4) echo 'class="active-link"';}?>>Contact us</a></li>
+						<?php else: ?>
+
+						<div class="logout" style="margin-left: 1.5rem;">
+							<a href="modules/dologout.php"><button class="btn-secondary btn-logout"> <i
+										class="fas fa-sign-out"></i></i>
+								</button></a>
+						</div>
+						<?php endif; ?>
+
 					</ul>
 				</nav>
 			</div>

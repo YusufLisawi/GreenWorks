@@ -9,7 +9,7 @@
 			</p>
 			<div class="btns-flex">
 				<a href="login.php"><button class="btn">start now</button></a>
-				<a href="">
+				<a href="greenworks.php">
 					<button class="btn-secondary">
 						explore greenworks
 					</button></a>

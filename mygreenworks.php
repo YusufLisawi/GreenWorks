@@ -1,8 +1,17 @@
+<?php 
+	include 'modules/auth.class.php';
+
+	$auth = new Auth();
+
+	if (!($auth -> isAuth())){
+		$auth -> redirect('login.php');
+	}
+?>
 <?php $link = 1 ; $style_greenworks = true; include 'inc/header.php' ?>
 <section class="hero mygreenworks">
 	<h1 data-aos="fade-left">My GreenWorks</h1>
 	<div class="flex" data-aos="fade-up">
-		<h1 class="name">Hi Yusuf 👋,</h1>
+		<h1 class="name">Hi <?php if (isset($_SESSION['username'])) echo $_SESSION['username'] ?> 👋,</h1>
 		<a href="add.php">
 			<button class="special-btn">
 				<img src="./images/add.svg">

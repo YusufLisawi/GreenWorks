@@ -1,0 +1,42 @@
+.swiper {
+	width: 600px;
+	height: 400px;
+	border-radius: 1rem;
+	/* box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.1); */
+}
+
+.swiper-slide img {
+	height: 400px;
+	object-fit: cover;
+	width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	color: #fff !important;
+}
+
+.details {
+	margin: 5rem auto;
+}
+
+.gw-details {
+	margin: 4rem auto;
+	text-align: center;
+}
+.gw-details p {
+	font-size: 1.35rem;
+	line-height: 3rem;
+}
+.gw-details.flex {
+	flex-direction: column;
+	gap: 4rem;
+}
+
+.info {
+	max-width: 70%;
+}
+
+.info h2 {
+	color: var(--primary-color);
+}
