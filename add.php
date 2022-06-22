@@ -20,7 +20,7 @@
 			</div>
 		</form>
 	</div>
-	<form action="" method="POST" class="inputs" data-aos="fade-in" novalidate>
+	<form action="" method="POST" class="inputs" data-aos="fade-up" novalidate>
 		<div class="invalid-feedback hide">All fields are required</div>
 		<div class="fields">
 			<div class="col">

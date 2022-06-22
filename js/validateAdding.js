@@ -6,14 +6,13 @@ const invalid_feedback = document.querySelector(".invalid-feedback");
 
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
-	console.log("allFields: ", allFields);
-	if (checkFields()) {
-		console.log("submitted");
+	console.log("submitted");
+	if (checkFields() >= 3) {
 		form.submit();
 	}
 });
 function checkFields() {
-	let check = 0;
+	let pass = [];
 	allFields.forEach((field) => {
 		if (field.value == "") {
 			invalid_feedback.classList.remove("hide");
@@ -21,7 +20,6 @@ function checkFields() {
 			field.parentElement
 				.querySelector("label")
 				.classList.add("is-invalid");
-			check = 0;
 		} else {
 			invalid_feedback.classList.add("hide");
 			field.classList.remove("is-invalid");
@@ -31,10 +29,11 @@ function checkFields() {
 			field.parentElement
 				.querySelector("label")
 				.classList.add("is-valid");
-			check = 1;
+			pass.push(1);
+			console.log(pass);
 		}
 	});
-	return check;
+	return pass.length;
 }
 
 allFields.forEach((field) => {

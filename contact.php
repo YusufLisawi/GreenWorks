@@ -1,3 +1,4 @@
+<?php include 'modules/sendmail.php'; ?>
 <?php $link = 4 ; $style_inputs = true; include 'inc/header.php' ?>
 <section class="hero contact">
 	<div class="flex">
