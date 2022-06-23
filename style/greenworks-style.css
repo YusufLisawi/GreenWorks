@@ -272,3 +272,10 @@ textarea.is-invalid {
 	border-radius: 1rem;
 	opacity: 0;
 }
+
+/* adding */
+
+.dropzone {
+	margin-bottom: -0.1rem;
+	width: 100%;
+}

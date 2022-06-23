@@ -30,7 +30,7 @@
 
             if ($pass)
             {
-                $auth -> start($data['username']);
+                $auth -> start($data['username'], $data['id']);
                 $auth -> redirect("mygreenworks.php");
             }
             else {

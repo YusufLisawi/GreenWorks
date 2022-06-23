@@ -11,7 +11,7 @@
 
     if($auth -> isAuth())
     {
-        $auth -> redirect("greenworks.php");
+        $auth -> redirect("mygreenworks.php");
     }
 
 

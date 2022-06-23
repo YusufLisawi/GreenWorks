@@ -6,8 +6,8 @@ const invalid_feedback = document.querySelector(".invalid-feedback");
 
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
-	console.log("submitted");
 	if (checkFields() >= 3) {
+		console.log("submitted");
 		form.submit();
 	}
 });
@@ -30,7 +30,6 @@ function checkFields() {
 				.querySelector("label")
 				.classList.add("is-valid");
 			pass.push(1);
-			console.log(pass);
 		}
 	});
 	return pass.length;

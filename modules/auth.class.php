@@ -1,10 +1,11 @@
 <?php
     session_start();
     class Auth{
-        public function start($username){
+        public function start($username, $user_id){
             session_destroy();
             session_start();
             $_SESSION['username'] = $username;
+            $_SESSION['user_id'] = $user_id;
         }
         
         public function isAuth(){
