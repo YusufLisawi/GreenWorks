@@ -123,7 +123,9 @@ footer {
 	margin: 0;
 	padding: 4rem 8rem;
 	color: #fff;
-	position: relative;
+	/* position: fixed; */
+	/* bottom: 0; */
+	width: 100%;
 }
 footer::after {
 	content: "";

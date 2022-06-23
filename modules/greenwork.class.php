@@ -17,12 +17,21 @@
             $stmt = $this
                     ->connect()
                     ->prepare($sql);
-            $stmt -> execute([$gen_post_id, $title,$ingredient,$steps, $images, $this->user_id]);
+            $stmt -> execute([$gen_post_id, $title, $ingredient, $steps, $images, $this->user_id]);
             $stmt = null;
         }
 
-        public function remove($post_id){
-            $sql = "DELETE FROM `post` WHERE gen_post_id = ?;";
+        public function editPost($title, $ingredient, $steps, $post_id) {
+            $sql = "UPDATE post SET title=?, ingredient=?, steps=? WHERE id=?;";
+            $stmt = $this
+                    ->connect()
+                    ->prepare($sql);
+            $stmt -> execute([$title, $ingredient, $steps, $post_id]);
+            $stmt = null;
+        }
+
+        public function removePost($post_id){
+            $sql = "DELETE FROM `post` WHERE id = ?;";
             $stmt = $this
                     ->connect()
                     ->prepare($sql);
@@ -30,13 +39,23 @@
             $stmt = null;
         }
 
-        public function findPost($post_id){
+        public function findPost($folder_post_id){
             $sql = "SELECT * FROM `post` WHERE gen_post_id = ? LIMIT 1;";
             $stmt = $this
                     ->connect()
                     ->prepare($sql);
-            $stmt -> execute([$post_id]); 
+            $stmt -> execute([$folder_post_id]); 
             $exist = $stmt -> fetch();
+            $stmt = null;
+            return $exist;
+        }
+        public function getPost($post_id){
+            $sql = "SELECT * FROM `post` WHERE id = ? LIMIT 1;";
+            $stmt = $this
+                    ->connect()
+                    ->prepare($sql);
+            $stmt -> execute([$post_id]); 
+            $exist = $stmt -> fetch(PDO::FETCH_ASSOC);
             $stmt = null;
             return $exist;
         }

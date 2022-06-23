@@ -9,9 +9,15 @@
 	if (!($auth -> isAuth())){
 		$auth -> redirect('login.php');
 	}
-	
 	$gw = new Greenwork($_SESSION['username'], $_SESSION['user_id']);
     $myPosts = $gw -> getMyPosts();
+	
+	if (isset($_POST['delete_id'])){
+		$gw -> removePost($_POST['delete_id']);
+		header('Location: mygreenworks.php');
+	}
+	
+
 ?>
 <?php $link = 1 ; $style_greenworks = true; include 'inc/header.php' ?>
 <section class="hero mygreenworks">
@@ -45,7 +51,12 @@
 				<td class="actions">
 					<a href="details.php?id=<?=$gwk['id']?>"><i class="fa-solid fa-eye" id="view"></i></a>
 					<a href="modify.php?id=<?=$gwk['id']?>"><i class="fa-solid fa-pen-to-square" id="edit"></i></a>
-					<a href=""><i class="fa fa-trash" id="delete" aria-hidden="true"></i></a>
+					<form action="" method="post" class="delete-form">
+						<input type="hidden" name="delete_id" value="<?php echo $gwk['id']?>">
+						<button type="submit" name="delete" style="border: none; background: none;">
+							<i class="fa fa-trash" id="delete"></i>
+						</button>
+					</form>
 				</td>
 			</tr>
 			<?php endforeach; ?>
@@ -54,5 +65,34 @@
 </section>
 <?php endif; ?>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/sweetalert.js"></script>
+<script>
+$(document).ready(function() {
+	$('.delete-form').on('click', function(e) {
+		e.preventDefault();
+		Swal.fire({
+			title: 'Are you sure?',
+			text: "You won't be able to revert this!",
+			type: 'warning',
+			showCancelButton: true,
+			confirmButtonColor: '#37bc2b',
+			cancelButtonColor: '#000',
+			confirmButtonText: 'Yes, delete it!'
+		}).then((result) => {
+			if (result.value) {
+				Swal.fire({
+					title: 'Deleted!',
+					text: 'Your GreenWork has been deleted.',
+					type: 'success',
+				})
+				setTimeout(function() {
+					$('.delete-form').submit();
+				}, 1500);
+			}
+		})
+	})
+})
+</script>
 
 <?php include 'inc/footer.php' ?>

@@ -1,19 +1,24 @@
 .swiper {
-	width: 600px;
-	height: 400px;
+	width: 700px;
+	height: 500px;
 	border-radius: 1rem;
-	/* box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.1); */
+	box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.1);
 }
 
 .swiper-slide img {
-	height: 400px;
 	object-fit: cover;
+	object-position: center;
+	height: 100%;
 	width: 100%;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
 	color: #fff !important;
+}
+.swiper-pagination {
+	text-shadow: 0px 3px 30px rgba(0, 0, 0, 0.4);
+	color: #fff;
 }
 
 .details {

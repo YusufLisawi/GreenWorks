@@ -1,23 +1,26 @@
+<?php
+session_start();
+include 'modules/greenwork.class.php';
+if (isset($_GET['id'])){
+	$gw = new Greenwork($_SESSION['username'], $_SESSION['user_id']);
+	$post = $gw -> getPost($_GET['id']);
+}
+?>
 <?php $link = 2 ; $swiperjs = true; $style_details = true; include 'inc/header.php' ?>
 
+<?php if (!empty($post) && isset($post) && file_exists("modules/uploads/".$post['gen_post_id'])): ?>
 <section class="details">
 	<!-- Slider main container -->
 	<div class="swiper" data-aos="fade-in">
 		<!-- Additional required wrapper -->
 		<div class="swiper-wrapper">
 			<!-- Slides -->
+			<?php $images = json_decode($post['images']);?>
+			<?php foreach($images as $image): ?>
 			<div class="swiper-slide">
-				<img src="./images/GreenWorks/IMAGE 1.png" alt="">
+				<img src="./modules/uploads/<?=$post['gen_post_id']?>/<?=$image?>" alt="<?=$image?>">
 			</div>
-			<div class="swiper-slide">
-				<img src="./images/GreenWorks/IMAGE 2.png" alt="">
-			</div>
-			<div class="swiper-slide">
-				<img src="./images/GreenWorks/IMAGE 3.png" alt="">
-			</div>
-			<div class="swiper-slide">
-				<img src="./images/GreenWorks/IMAGE 4.png" alt="">
-			</div>
+			<?php endforeach; ?>
 		</div>
 		<div class="swiper-pagination"></div>
 
@@ -29,20 +32,15 @@
 	<div class="gw-details flex">
 		<div class="title info" data-aos="fade-up">
 			<h2>Title</h2>
-			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, sint</p>
+			<p style="text-transform:capitalize;"><?=$post['title']?></p>
 		</div>
 		<div class="ingredients info" data-aos="fade-up">
 			<h2>Ingredients</h2>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius magni modi suscipit quos minima! Alias
-				voluptatum debitis sapiente. Facilis corrupti impedit hic ab repudiandae corporis accusantium quis
-				magnam ea quasi?</p>
+			<p style="text-transform:capitalize;"><?=$post['ingredient']?></p>
 		</div>
 		<div class="steps info" data-aos="fade-up">
 			<h2>Steps</h2>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum repellendus neque quia quas, voluptatem
-				amet. Quos sit eos, mollitia quas ab sed, odio, perspiciatis impedit culpa assumenda expedita sint
-				suscipit odit. Modi unde ea dicta architecto repellat. Harum placeat est, officiis maxime explicabo,
-				numquam atque, repellendus eaque aspernatur rem voluptatem? </p>
+			<p style="text-transform:capitalize;"><?=$post['steps']?></p>
 		</div>
 
 		<a href="greenworks.php">
@@ -53,6 +51,8 @@
 	</div>
 
 </section>
+
+<?php endif; ?>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>

@@ -13,7 +13,7 @@ if (!isset($_SESSION['post_id'])){
 
 $postFolder = $_SESSION['post_id'];
 
-if(isset($_FILES["file"]["name"]) && isset($_POST['title'])){
+if(isset($_FILES["file"]["name"]) && count($_POST) > 2){
   $file = $_FILES["file"];
   $totalFiles = count($file['name']);
   $filesArray = array();
@@ -42,6 +42,9 @@ if(isset($_FILES["file"]["name"]) && isset($_POST['title'])){
     $filesArray[] = $newImageName;
   }
     $images = json_encode($filesArray);
+    foreach($_POST as $name => $value){
+			$_POST[$name] = trim(htmlentities($value));
+		}
   	extract($_POST);
       
     $gw = new Greenwork($_SESSION['username'], $_SESSION['user_id']);
