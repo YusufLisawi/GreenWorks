@@ -22,6 +22,7 @@ session_start();
 	<?php if(isset($dragndrop)) echo '<link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />'?>
 	<?php if(isset($swiperjs)) echo '<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>'?>
 	<?php if ((isset($myPosts) && count($myPosts) < 1 ) || (isset($allPosts) && count($allPosts) < 1)):?>
+	<?php $noshaper = true; ?>
 	<style>
 	footer {
 		display: none;
@@ -36,7 +37,9 @@ session_start();
 		<i class="fas fa-arrow-up"></i>
 	</div>
 	<div class="shapes about contact" data-aos="fade-in"></div>
+	<?php if (!isset($noshaper)):?>
 	<div class="shapes r about contact" data-aos="fade-up"></div>
+	<?php endif; ?>
 	<div class="container">
 		<header data-aos="fade-in">
 			<div class="flex">

@@ -30,7 +30,7 @@
 				<div class="isExistUser"
 					style="color: #ff3c3c; margin-bottom: -1rem; margin-top: -.3rem; font-size: 1.1rem;">User with
 					this
-					email or username are already exist</div>
+					email or username is already exist</div>
 				<?php endif; ?>
 
 
@@ -73,7 +73,7 @@
 					</div>
 				</div>
 			</div>
-			<button class="btn-secondary" type="submit">Sign up</button>
+			<button class="btn-secondary" id="signup" type="submit">Sign up</button>
 			<p class="register">
 				Already have an account?
 				<a href="login.php">Sign in.</a>
