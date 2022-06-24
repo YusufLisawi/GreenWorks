@@ -32,11 +32,31 @@
 			<a href="./about.php">
 				<h3>About us</h3>
 			</a>
+			<button class="btn btn-lang">Change Language</button>
 		</div>
 	</div>
 </footer>
 <script src="./js/script.js"></script>
 <?php include 'script.php' ?>
+
+<script type="text/javascript">
+function translate() {
+	new google.translate.TranslateElement({
+		pageLanguage: 'en'
+	}, 'google_translate_element');
+}
+document.querySelector('.btn-lang').addEventListener('click', () => {
+	console.log('btn lang')
+	if (confirm('Are you sure you want to change the language?')) {
+		translate();
+	} else {
+		alert("Good choice ! I love you");
+	}
+})
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
 </body>
 
 </html>

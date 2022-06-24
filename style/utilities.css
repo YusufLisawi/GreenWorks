@@ -52,7 +52,8 @@ body {
 	height: 100%; /* important to use all the height available  */
 }
 
-h1 {
+h1,
+h1 font {
 	/* h1 */
 	font-style: normal;
 	font-weight: 600;
@@ -66,7 +67,8 @@ h1 span {
 	color: var(--primary-color);
 }
 
-h2 {
+h2,
+h2 font {
 	font-weight: 600;
 	font-size: 1.6rem;
 	line-height: 131%;
@@ -74,12 +76,14 @@ h2 {
 	text-transform: uppercase;
 	text-align: center;
 }
-h4 {
+h4,
+h4 font {
 	font-size: 28px;
 	font-weight: 400;
 	text-transform: capitalize;
 }
-h5 {
+h5,
+h5 font {
 	font-size: 24px;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -127,15 +131,21 @@ a {
 	color: #000;
 }
 
-p span {
+p span,
+p font span {
 	font-weight: 500;
 	font-size: 20px;
 	color: var(--primary-color);
 }
 
-h2.title {
+h2.title,
+h2.title font {
 	margin: 5rem 0;
 	font-size: 2rem;
+}
+h2.card-t,
+h2.card-t font {
+	font-size: 1.2rem !important;
 }
 
 /* logout */

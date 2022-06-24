@@ -3,7 +3,8 @@
 	margin-top: 3rem;
 	margin-bottom: 4rem;
 }
-h1.name {
+h1.name,
+h1.name font {
 	font-size: 4rem;
 	font-weight: 500;
 }
@@ -38,13 +39,13 @@ h1.name {
 	gap: 4rem;
 }
 .mygreenworks {
-	margin-bottom: 5rem;
+	margin-bottom: 3rem;
 }
 
 .table {
 	width: 100%;
 	background-color: #fff;
-	margin-bottom: 4rem;
+	margin-bottom: 7rem;
 	box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
 }
 thead {
@@ -215,7 +216,8 @@ textarea.is-invalid {
 .card > img {
 	width: 450px;
 }
-.all-greenworks h1 {
+.all-greenworks h1,
+.all-greenworks h1 font {
 	margin-top: 5rem;
 }
 .gws {
@@ -251,12 +253,14 @@ textarea.is-invalid {
 .gw-card .text * {
 	margin-top: 1.2rem;
 }
-.gw-card h5 {
+.gw-card h5,
+.gw-card h5 font {
 	font-size: 1rem;
 	color: #000;
 	opacity: 1;
 }
-.gw-card h5 span {
+.gw-card h5 span,
+.gw-card h5 span font {
 	font-size: 1rem;
 	color: var(--primary-color);
 }

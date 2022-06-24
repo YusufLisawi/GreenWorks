@@ -13,7 +13,8 @@ for($i = 0; $i < count($folderPosts); $i++){
 }
 
 error_log(json_encode($dirPosts));
-$folders = scandir('uploads');
+$imgsFolder = "modules/uploads/";
+$folders = scandir($imgsFolder);
 // function to delete non-empty folders
 function deleteDirectory($dir) {
     if (!file_exists($dir)) {
@@ -45,7 +46,7 @@ foreach ($folders as $folderI => $folderN){
     // delete it if theres no posts for it
 	if (!in_array($folderN, $dirPosts)){
 		error_log("$folderN");
-		deleteDirectory("uploads/".$folderN);
+		deleteDirectory($imgsFolder.$folderN);
 	}
 }
 

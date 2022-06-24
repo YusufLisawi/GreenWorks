@@ -1,5 +1,5 @@
 <?php
-echo '<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+echo '<script src="./js/aos-master/dist/aos.js"></script>
 <script>
 AOS.init();
 </script>';

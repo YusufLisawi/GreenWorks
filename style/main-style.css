@@ -10,7 +10,8 @@
 	justify-content: space-between;
 	gap: 3rem;
 }
-.hero p {
+.hero p,
+.hero p font {
 	margin: 1rem 0;
 	font-weight: 400;
 	font-size: 20px;
@@ -148,13 +149,16 @@
 
 /* about us */
 .hero.about p,
-.hero.about p span {
+.hero.about p span,
+.hero.about p font span,
+.hero.about p font span font {
 	line-height: 200%;
 	width: 100%;
 	font-size: 1.5rem;
 }
 .hero.about h1,
-.hero.about h1 span {
+.hero.about h1 font .hero.about h1,
+.hero.about h1 font span font {
 	font-size: 6.5rem;
 }
 .about .title {
@@ -205,11 +209,13 @@
 	left: 0;
 	margin-top: 4.5rem;
 }
-.card-2 p {
+.card-2 p,
+.card-2 p font {
 	font-size: 1.6rem;
 	line-height: 151%;
 }
-.card-2 p span {
+.card-2 p span,
+.card-2 p font span {
 	color: var(--primary-color);
 	font-size: 1.6rem;
 }
@@ -240,7 +246,8 @@
 	text-align: left;
 	font-size: 1.8rem;
 }
-.creator .details h4 {
+.creator .details h4,
+.creator .details h4 font {
 	color: var(--primary-color);
 }
 

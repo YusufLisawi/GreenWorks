@@ -2,7 +2,7 @@
 session_start();
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
 	<meta charset="UTF-8" />
@@ -16,6 +16,7 @@ session_start();
 	<link rel="icon" type="image/x-icon" href="./images/miniLOGO.svg">
 	<link rel="stylesheet" href="./style/sweetalert2.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+	<link rel="stylesheet" href="./style/google-translate.css">
 	<?php if(isset($style_inputs)) echo '<link rel="stylesheet" href="./style/style-inputs.css" type="text/css" />'?>
 	<?php if(isset($style_greenworks)) echo '<link rel="stylesheet" href="./style/greenworks-style.css" type="text/css" />'?>
 	<?php if(isset($style_details)) echo '<link rel="stylesheet" href="./style/details-style.css" type="text/css"/>'?>

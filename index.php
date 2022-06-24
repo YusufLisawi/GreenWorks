@@ -1,4 +1,4 @@
-<?php include './inc/header.php' ?>
+<?php include './inc/header.php'; include_once 'modules/noPost.php'; ?>
 <section class="hero">
 	<div class="flex">
 		<div class="text-and-btn" data-aos="fade-right">
@@ -28,7 +28,7 @@
 		<div class="card" data-aos="fade-up">
 			<img src="./images/image-sea.png" alt="sea" />
 			<div class="text">
-				<h2>protect your sea</h2>
+				<h2 class="card-t">protect your sea</h2>
 				<p>
 					Unfortunately, one of the very harmful use what
 					humans have started using the ocean for
@@ -39,7 +39,7 @@
 		<div class="card" data-aos="fade-in" data-aos-duration="500">
 			<img src="./images/image-forest.png" alt="forest" />
 			<div class="text">
-				<h2>protect your forest</h2>
+				<h2 class="card-t">protect your forest</h2>
 				<p>
 					Land pollution not only affects it, but also
 					passes into the fresh water that human beings
@@ -50,7 +50,7 @@
 		<div class="card" data-aos="fade-up">
 			<img src="./images/image-air.png" alt="air" />
 			<div class="text">
-				<h2>protect your air</h2>
+				<h2 class="card-t">protect your air</h2>
 				<p>
 					Air pollution is defined as a change in the
 					composition of the air by pollutants harmful to
@@ -86,4 +86,5 @@
 	</div>
 </div>
 </div>
+
 <?php include './inc/footer.php';?>
