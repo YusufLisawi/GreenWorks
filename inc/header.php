@@ -13,10 +13,9 @@ session_start();
 	<link rel="stylesheet" href="./style/utilities.css" type="text/css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="./js/aos-master/dist/aos.css" />
 	<link rel="icon" type="image/x-icon" href="./images/miniLOGO.svg">
 	<link rel="stylesheet" href="./style/sweetalert2.min.css">
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-	<link rel="stylesheet" href="./style/google-translate.css">
 	<?php if(isset($style_inputs)) echo '<link rel="stylesheet" href="./style/style-inputs.css" type="text/css" />'?>
 	<?php if(isset($style_greenworks)) echo '<link rel="stylesheet" href="./style/greenworks-style.css" type="text/css" />'?>
 	<?php if(isset($style_details)) echo '<link rel="stylesheet" href="./style/details-style.css" type="text/css"/>'?>
