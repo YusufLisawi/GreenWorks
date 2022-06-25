@@ -7,4 +7,5 @@ $sql = "SELECT p.id, p.images, p.gen_post_id,p.title,p.ingredient,p.steps, u.use
 $stmt = $pdo -> prepare($sql);
 $stmt -> execute();
 $allPosts = $stmt -> fetchAll(PDO::FETCH_ASSOC);
+$allPosts = array_reverse($allPosts);
 ?>
