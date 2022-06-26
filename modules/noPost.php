@@ -51,6 +51,16 @@ foreach ($folders as $folderI => $folderN){
 		deleteDirectory($imgsFolder.$folderN);
 	}
 }
+foreach ($dirPosts as $folderI => $folderN){
+	if ($folderN == '.' || $folderN == '..') {
+            continue;
+	}
+    // delete it if theres no posts for it
+	if (!in_array($folderN, $dirPosts)){
+		error_log("$folderN");
+		deleteDirectory($imgsFolder.$folderN);
+	}
+}
 
 
 ?>
