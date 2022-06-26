@@ -1,5 +1,7 @@
 <?php 
 include 'db.class.php';
+if (!file_exists($storeFolder))
+    mkdir($storeFolder, 0777, true);
 // fetch all posts folders names 
 $db = new DBC;
 $pdo = $db -> connect();

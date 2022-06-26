@@ -6,7 +6,8 @@ $ds = DIRECTORY_SEPARATOR;
  
 $storeFolder = 'uploads';
 $userFolder = $_SESSION['username'];
-if (!file_exists($postFolder))
+
+if (!file_exists($storeFolder))
     mkdir($storeFolder, 0777, true);
     
 if (!isset($_SESSION['post_id'])){
