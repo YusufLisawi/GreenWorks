@@ -6,7 +6,9 @@ $ds = DIRECTORY_SEPARATOR;
  
 $storeFolder = 'uploads';
 $userFolder = $_SESSION['username'];
-
+if (!file_exists($postFolder))
+    mkdir($storeFolder, 0777, true);
+    
 if (!isset($_SESSION['post_id'])){
     $_SESSION['post_id'] = uniqid("p");
 }
