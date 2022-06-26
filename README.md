@@ -1,5 +1,6 @@
 # GreenWorks
-GreenWorks is a web application to create a digital eco-responsible solution. PHP | Css | Vanilla Js 
+
+GreenWorks is a web application to create a digital eco-responsible solution. PHP | Css | Vanilla Js
 
 ![home](https://user-images.githubusercontent.com/90868691/175818732-834cee27-e35a-4131-9612-dac434a5863d.png)
 ![Screen Shot 2022-06-26 at 15 25 06](https://user-images.githubusercontent.com/90868691/175818978-0b39cf88-574c-4003-a0bc-53ab19f7d979.png)
@@ -14,4 +15,3 @@ GreenWorks is a web application to create a digital eco-responsible solution. PH
 ![addGW](https://user-images.githubusercontent.com/90868691/175818781-28404238-595f-40fb-9d76-74e24b4d84ee.png)
 ![listofgreenworks](https://user-images.githubusercontent.com/90868691/175818788-72faa428-2a90-44e3-9d78-3ec07265529d.png)
 ![detailsGW](https://user-images.githubusercontent.com/90868691/175818796-4efa2485-2014-4cc7-ad6b-3f138d557d27.png)
-

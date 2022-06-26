@@ -21,7 +21,7 @@
 	<?php if(isset($style_details)) echo '<link rel="stylesheet" href="./style/details-style.css" type="text/css"/>'?>
 	<?php if(isset($dragndrop)) echo '<link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />'?>
 	<?php if(isset($swiperjs)) echo '<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>'?>
-	<?php if ((isset($myPosts) && count($myPosts) < 1 ) || (isset($allPosts) && count($allPosts) < 1)):?>
+	<?php if ((isset($myPosts) && count($myPosts) < 1 ) || (isset($allPosts) && count($allPosts) < 1) || !file_exists('./modules/uploads') || !file_exists('modules/uploads')) :?>
 	<?php $noshaper = true; ?>
 	<style>
 	footer {
