@@ -1,5 +1,5 @@
 <?php
-	include_once "modules/dosignup.php";
+	include_once "models/dosignup.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">

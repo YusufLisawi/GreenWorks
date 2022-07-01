@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'modules/greenwork.class.php';
+include 'models/greenwork.class.php';
 if (isset($_GET['id'])){
 	$gw = new Greenwork($_SESSION['username'], $_SESSION['user_id']);
 	$post = $gw -> getPost($_GET['id']);
@@ -8,7 +8,7 @@ if (isset($_GET['id'])){
 ?>
 <?php $link = 2 ; $swiperjs = true; $style_details = true; include 'inc/header.php' ?>
 
-<?php if (!empty($post) && isset($post) && file_exists("modules/uploads/".$post['gen_post_id'])): ?>
+<?php if (!empty($post) && isset($post) && file_exists("models/uploads/".$post['gen_post_id'])): ?>
 <section class="details">
 	<!-- Slider main container -->
 	<div class="swiper" data-aos="fade-in">
@@ -18,7 +18,7 @@ if (isset($_GET['id'])){
 			<?php $images = json_decode($post['images']);?>
 			<?php foreach($images as $image): ?>
 			<div class="swiper-slide">
-				<img src="./modules/uploads/<?=$post['gen_post_id']?>/<?=$image?>" alt="<?=$image?>">
+				<img src="./models/uploads/<?=$post['gen_post_id']?>/<?=$image?>" alt="<?=$image?>">
 			</div>
 			<?php endforeach; ?>
 		</div>

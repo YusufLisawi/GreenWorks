@@ -1,5 +1,5 @@
 <?php 
-	include 'modules/auth.class.php';
+	include 'models/auth.class.php';
 
 	$auth = new Auth();
 

@@ -1,4 +1,4 @@
-<?php include './inc/header.php'; include_once 'modules/noPost.php'; ?>
+<?php include './inc/header.php'; include_once 'models/noPost.php'; ?>
 <section class="hero">
 	<div class="flex">
 		<div class="text-and-btn" data-aos="fade-right">

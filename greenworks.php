@@ -1,5 +1,5 @@
 <?php 
-include 'modules/allGwks.php';
+include 'models/allGwks.php';
 
 ?>
 <?php $link = 2 ; $style_greenworks = true; include 'inc/header.php' ?>
@@ -11,12 +11,12 @@ include 'modules/allGwks.php';
 <section class="gws">
 	<div class="greenworks">
 		<?php foreach($allPosts as $post): ?>
-		<?php if(file_exists("modules/uploads/".$post['gen_post_id'])): ?>
+		<?php if(file_exists("models/uploads/".$post['gen_post_id'])): ?>
 
 		<div class="gw-card" data-aos="fade-up">
 			<a href="details.php?id=<?=$post['id']?>"></a>
 			<?php $images = json_decode($post['images']);?>
-			<img src="./modules/uploads/<?=$post['gen_post_id']?>/<?=$images[0]?>" alt="gw" />
+			<img src="./models/uploads/<?=$post['gen_post_id']?>/<?=$images[0]?>" alt="gw" />
 			<div class="text">
 				<h5>Made by <span><?=$post['username']?></span></h5>
 				<p style="text-transform: capitalize;"><?=$post['title']?></p>

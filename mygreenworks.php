@@ -1,6 +1,6 @@
 <?php
-	include 'modules/auth.class.php';
-	include 'modules/greenwork.class.php';
+	include 'models/auth.class.php';
+	include 'models/greenwork.class.php';
 
 	unset($_SESSION['post_id']);
 	
