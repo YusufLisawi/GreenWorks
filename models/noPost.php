@@ -15,7 +15,7 @@ for($i = 0; $i < count($folderPosts); $i++){
 }
 
 error_log(json_encode($dirPosts));
-$imgsFolder = "modules/uploads/";
+$imgsFolder = "models/uploads/";
 $folders = scandir($imgsFolder);
 // function to delete non-empty folders
 function deleteDirectory($dir) {
